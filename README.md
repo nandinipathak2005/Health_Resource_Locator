@@ -13,33 +13,32 @@ A console-based multilingual application designed to enhance accessibility to af
   - **Working Hours**: Find services that are open during preferred hours or days.
 - **User-Centric Design**: Specifically aimed at helping low-income individuals find affordable and quality healthcare options.
 - **Improves Healthcare Accessibility**: Bridges the gap between underserved communities and necessary healthcare services.
+- **Map Integration**: Visualize healthcare providers' locations on a map using `folium`.
 
 ## 💡 Inspiration
 Healthcare services are often difficult to access for low-income communities due to distance, cost, and lack of information. This application empowers users to make informed decisions by offering a comprehensive, easy-to-use tool for locating affordable and quality healthcare services based on personal preferences.
 
-## 🚀 How It Works
+## 🚀 How It Works (with Map Integration)
+
 1. **Input**:
    - The user provides their location, preferred language, and any filters they want to apply (budget, proximity, services, ratings, etc.).
-  
+   - Hardcoded locations for hospitals and clinics are used for now.
+
 2. **Processing**:
-   - The application uses graph algorithms (like Dijkstra’s Algorithm) to calculate the most efficient and affordable paths to healthcare services.
+   - The application uses graph algorithms (like **Dijkstra’s Algorithm**) to calculate the most efficient and affordable paths to healthcare services.
    - Filters are applied based on the user’s preferences to narrow down the results.
+   - **Map Generation**: Using the `folium` library, the application creates a map with the healthcare providers' locations.
 
 3. **Output**:
    - Displays a list of healthcare providers that match the criteria, sorted by distance, cost, or ratings as specified.
+   - Generates a map to visualize the healthcare providers' locations.
 
 ## 🛠️ Technologies Used
-- **Programming Language**: [Your language of choice, e.g., Python, Java, C++]
-- **Graph Algorithms**: Dijkstra’s Algorithm or BFS/DFS for pathfinding and filtering.
-- **Multilingual Implementation**: [Specify library or method used, e.g., Google Translate API or hardcoded translations.]
-- **Data Structures**: Graphs, Lists, Queues.
+- **Programming Language**: Python
+- **Graph Algorithms**: Dijkstra’s Algorithm .
+- **Multilingual Implementation**: Google Translate API.
+- **Data Structures**: Graphs,Dictionaries,Lists.
+- **Map Generation**: **`folium`** library for displaying healthcare provider locations on an interactive map.
 
-## 🎯 Target Audience
-- Low-income individuals and families.
-- People residing in remote areas with limited access to healthcare services.
-- Those looking for specific healthcare services (e.g., general practice, emergency care, specialists) at affordable rates.
 
-## 🌍 Future Enhancements
-- **Real-time Data Integration**: Sync with government databases or health organizations for live updates on healthcare availability.
-- **Mobile App**: Expand the tool into a mobile app for easier accessibility on the go.
 
